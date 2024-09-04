@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio pacific</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/768f99001b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+      <!-- here the profile pic insert in css file -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="sub-title"><span class="FirstLatter">P</span>K</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header"><span id="home">Home</span></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" >
+                <span>
+                    <h2>Hi, I'm <span>Prashant</span><br> From India</h2>
+                    <p>Web Designer / Web Developer</p>
+                </span>
+                <span>
+                    <img src="Back.jpg" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- here we will add about section (self)-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio_img-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title " ><span class="FirstLatter">A</span>bout <span class="FirstLatter">M</span>e</h1>
+                    <p>I am a third-year student at Tulas Institute, affiliated with Uttarakhand University, pursuing my degree with a focus on Computer Science and Engineering. I have consistently maintaining an 80% average in each semester. I completed my 10th and 12th from the BSEB board. As a full stack developer specializing in the MERN stack, I am passionate about coding and building dynamic web applications. Besides my tech interests, I love singing and playing the guitar. I am eager to apply my skills in practical settings and collaborate on innovative projects that challenge my capabilities and contribute to my growth.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Projects</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX </span><br>Design web interface</li>
+                            <li><span>Full Stack</span><br> Web app development</li>
+                            <li><span>MERN Developer</span><br> With Delta </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" name="Education" id="Education">
+                        <ul>
+                            <li><span>B.tech</span> <br>From Tulas Institute (UTU)(80%)</li>
+                            <li><span>12TH</span><br>From BSEB Board (75%)</li>
+                            <li><span>10TH</span><br>From BSEB Board (83%)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" name="Experience" id="Experience">
+                        <ul>
+                            <li><span>Attendence Managemant System</span><br>With Playbees</li>
+                            <li><span>Portfolio</span><br> With Codsoft</li>
+                            <li><span>Warendular</span><br>web project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- services -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span class="FirstLatter">M</span>y <span class="FirstLatter">S</span>ervices</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in designing and developing modern web applications with a focus on clean, user-friendly interfaces and efficient, scalable back-end solutions. My expertise covers a full stack of technologies, allowing me to handle both the design and development aspects of web projects.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-u"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>As a UI/UX Designer and Front-End Developer, I focus on creating intuitive and engaging user experiences. My approach combines a deep understanding of user needs with technical expertise in modern front-end technologies.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+     </div>
+      <!-- Mnagement System  -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Attendence Managemant System</h3>
+                        <p>I have made an Attendence Managemant System project during internship in the <b>Playbees</b> in summer vacation.</p>
+                        <a href="https://github.com/PrashantKumar033/Attendence_management_system.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Watch-website</h3>
+                        <p>This responsive watch website template, crafted with HTML, CSS, and JavaScript, showcases a sleek design with smooth animations, interactive elements, and mobile-friendly features, providing an elegant user experience.</p>
+                        <a href="https://prashantkumar033.github.io/Watch-website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Warendular</h3>
+                        <p>Warendular is a web application that helps users find hotels in specific areas, built with HTML, CSS, JavaScript, Node.js, MongoDB, Express, and EJS for dynamic content rendering.(The work In process)</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+
+      </div>
+
+
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>prashantodin03@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 8448912112</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/king.prashant.984"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Prashant314703?s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/PrashantKumar033"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prashant-kumar-224a78256/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="POST" action="https://api.web3forms.com/submit">
+                        <input type="hidden" name="access_key" value="c3005cd3-dee0-4c2a-afac-6409a7bf5abf">
+                        <input type="text" name="Name" placeholder="Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Prashant, Thanks to connect <i class="fas fa-heart"></i> with me</p>
+        </div>
+    </div>
+
+
+    <!-- here is the javasript -->
+    <script >
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        let sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
