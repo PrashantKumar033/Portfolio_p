@@ -75,7 +75,9 @@ nav ul li a::after {
     bottom: -6px;
     transition: 0.75s;
 }
-
+p{
+    line-height:1.5rem;
+}
 nav ul li a:hover::after {
     width: 100%;
 }
